@@ -1,0 +1,90 @@
+main {
+    width: 100%;
+    min-height: 60vh;
+    padding: 100px 0;
+}
+
+.nav-contato{
+    background-color: #1C53CD;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    
+    a{
+    color: white;
+    }
+}
+
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Espaço entre imagem e formulário */
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os campos */
+}
+
+.imgXLS img{
+    width: 320px;
+    height: auto;
+}
+
+.inputForm{
+    width: 250px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #ccc; 
+    outline: none;
+}
+
+input:focus {
+  border-color: #0066cc; 
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); 
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+#tipoContato{
+    color: white;
+}
+
+select{
+    color: white;
+    width: 273px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #ccc; 
+    outline: none;
+    text-align: center;
+}
+
+select:focus {
+  border-color: #0066cc; 
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); 
+}
+
+.lblForm{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btnForm{
+    background-color: #1C53CD;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    border: none;
+}
