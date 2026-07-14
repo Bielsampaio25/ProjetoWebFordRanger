@@ -1,7 +1,10 @@
 main {
     width: 100%;
-    min-height: 60vh;
-    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav-contato{
@@ -29,7 +32,7 @@ main {
     gap: 15px; /* Espaço entre os campos */
 }
 
-.imgXLS img{
+.form-content img{
     width: 320px;
     height: auto;
 }
@@ -41,6 +44,7 @@ main {
     border-radius: 5px;
     border: 2px solid #ccc; 
     outline: none;
+    color: white;
 }
 
 input:focus {
@@ -51,6 +55,10 @@ input:focus {
 ::placeholder{
     color: white;
     text-align: center;
+}
+
+input:focus::placeholder {
+        color: transparent;
 }
 
 #tipoContato{
@@ -66,6 +74,11 @@ select{
     border: 2px solid #ccc; 
     outline: none;
     text-align: center;
+}
+
+.select-main{
+    background-color:white;
+    color: black;
 }
 
 select:focus {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,71 +12,63 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
-            <img src="../assets/logo-ford-256.png" alt="Logo Da Ford No Cabeçalho">
-            <nav>
-                <ul class="nav-item">
-                    <li class="nav-content"><a href="../index.html">Home</a></li>
-                    <li class="nav-lancamento"><a href="pages/lancamento.html">Lançamentos</a></li>
-                    <li class="nav-content"><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="nav-bar">
+        <img src="../assets/logo-ford-256.png" alt="Logo Da Ford No Cabeçalho">
+        <nav>
+            <ul class="nav-item">
+                <li class="nav-content"><a href="../index.html">Home</a></li>
+                <li class="nav-lancamento"><a href="pages/lancamento.html">Lançamentos</a></li>
+                <li class="nav-content"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <video class="video-banner" autoplay muted loop>
-            <source src="../assets/WhatsApp Video 2026-07-01 at 16.16.20.mp4" type="video/mp4">
-        </video>
+        <iframe class="video-banner" width="560" height="315" src="https://www.youtube.com/embed/vQsryuNmsL0?si=dhporznRFKjxpHN-"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="cards-container">
-            <div class="card-lancamentos">
-                <div class="card-contents">
-                    <img src="../assets/XL_Cabine-removebg-preview.png"
-                        alt="Imagem Do Carro Ford XL Com Cabine Simples">
+            <section class="cards-lancamento">
+                <img src="../assets/XL_Cabine-removebg-preview.png" alt="Imagem Do Carro Ford XL Com Cabine Simples">
+                <div class="cards-contents">
                     <input type="checkbox" class="checkbox" name="checkboxXL" id="checkboxXL" value="XL">
-                    <label for="lblCheckbox">XL Cabine Simples</label>
+                    <label for="lblCheckbox">1. XL Cabine Simples 2.2 Diesel 4X4 MT 2022 Preço Sugerido: R$
+                        183.850</label>
                 </div>
-            </div>
-            <div class="card-lancamentos">
-                <div class="card-contents">
-                    <img src="../assets/xls_2.2_diesel-removebg-preview.png" alt="Imagem Do Carro Ford XLS 2.2 Diesel">
+            </section>
+            <section class="cards-lancamento">
+                <img src="../assets/xls_2.2_diesel-removebg-preview.png" alt="Imagem Do Carro Ford XLS 2.2 Diesel">
+                <div class="cards-contents">
                     <input type="checkbox" class="checkbox" name="checkboxXLS" id="checkboxXLS" value="XLS">
-                    <label for="lblCheckbox">XLS 2.2 Diesel</label>
+                    <label for="lblCheckbox">2. XLS 2.2 Diesel 4X4 AT 2022 Preço Sugerido: R$ 220.690</label>
                 </div>
-            </div>
-            <div class="card-lancamentos">
-                <div class="card-contents">
-                    <img src="../assets/storm-removebg-preview.png" alt="Imagem Do Carro Ford Storm">
+            </section>
+            <section class="cards-lancamento">
+                <img src="../assets/storm-removebg-preview.png" alt="Imagem Do Carro Ford Storm">
+                <div class="cards-contents">
                     <input type="checkbox" class="checkbox" name="checkboxStorm" id="checkboxStorm" value="Storm">
-                    <label for="lblCheckbox">Storm</label>
+                    <label for="lblCheckbox">3. Storm 3.2 Diesel 4X4 AT 2022 Preço Sugerido: R$ 222.790</label>
                 </div>
-            </div>
-            </div>
-            <div class="btn-container">
-                <button class="btnLancamento">Comparar Carros</button>
-            </div>
-    </main>
-    <footer>
-        <div class="footer">
-
-            <div class="footer-redes">
-                <p>Redes Sociais</p>
-
-                <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR">
-                    <img src="../assets/facebook.png" alt="Facebook">
-                </a>
-
-                <a href="https://www.instagram.com/fordbrasil/">
-                    <img src="../assets/instagram.png" alt="Instagram">
-                </a>
-
-                <a href="https://www.youtube.com/fordbrasil">
-                    <img src="../assets/youtube.png" alt="YouTube">
-                </a>
-            </div>
-
-            <img class="logo-footer" src="../assets/ford-96.png" alt="Logo da Ford">
+            </section>
         </div>
+        <div class="btn-container">
+            <button class="btnLancamento">Comparar Carros</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-redes">
+            <p>Redes Sociais</p>
+            <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR">
+                <img src="../assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/fordbrasil/">
+                <img src="../assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/fordbrasil">
+                <img src="../assets/youtube.png" alt="YouTube">
+            </a>
+        </div>
+        <img class="logo-footer" src="../assets/ford-96.png" alt="Logo da Ford">
     </footer>
 </body>
 

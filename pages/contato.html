@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,50 +12,41 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
-            <img src="../assets/logo-ford-256.png" alt="Logo Da Ford">
-            <nav>
-                <ul class="nav-item">
-                    <li class="nav-content"><a href="../index.html">Home</a></li>
-                    <li class="nav-content"><a href="lancamento.html">Lançamentos</a></li>
-                    <li class="nav-contato"><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="nav-bar">
+        <img src="../assets/logo-ford-256.png" alt="Logo Da Ford">
+        <nav>
+            <ul class="nav-item">
+                <li class="nav-content"><a href="../index.html">Home</a></li>
+                <li class="nav-content"><a href="lancamento.html">Lançamentos</a></li>
+                <li class="nav-contato"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <form class="form">
+            <div class="form-content">
+                <img src="../assets/xls_2.2_diesel-removebg-preview.png" alt="Imagem do carro">
+            <div class="campos">
+                    <label class="lblForm">Sobre Você</label>
 
-        <div class="form">
-            <form>
-                <div class="form-content">
+                    <input type="text" class="inputForm" placeholder="NOME*">
+                    <input type="text" class="inputForm" placeholder="SOBRENOME*">
+                    <input type="email" class="inputForm" placeholder="EMAIL*">
+                    <input type="text" class="inputForm" placeholder="CPF*">
+                    <input type="tel" class="inputForm" placeholder="TELEFONE*">
 
-                    <div class="imgXLS">
-                        <img src="../assets/xls_2.2_diesel-removebg-preview.png" alt="Imagem do carro">
-                    </div>
+                    <select>
+                        <option class="select-main">Tipo de Contato</option>
+                        <option class="select-main">Elogio</option>
+                        <option class="select-main">Reclamação</option>
+                        <option class="select-main">Solicitação</option>
+                    </select>
 
-                    <div class="campos">
-                        <label class="lblForm">Sobre Você</label>
-
-                        <input type="text" class="inputForm" placeholder="NOME*">
-                        <input type="text" class="inputForm" placeholder="SOBRENOME*">
-                        <input type="email" class="inputForm" placeholder="EMAIL*">
-                        <input type="text" class="inputForm" placeholder="CPF*">
-                        <input type="tel" class="inputForm" placeholder="TELEFONE*">
-
-                        <select>
-                            <option>Tipo de Contato</option>
-                            <option>Elogio</option>
-                            <option>Reclamação</option>
-                            <option>Solicitação</option>
-                        </select>
-
-                        <button class="btnForm">Enviar</button>
-                    </div>
-
+                    <button class="btnForm">Enviar</button>
                 </div>
-            </form>
-        </div>
+
+            </div>
+        </form>
     </main>
     <footer>
         <div class="footer">

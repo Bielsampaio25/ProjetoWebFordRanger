@@ -1,6 +1,9 @@
 main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-index {
@@ -9,10 +12,10 @@ main {
     height: 20px;
     text-align: center;
     border-radius: 2px;
+}
 
-    a {
-        color: white;
-    }
+.nav-index a {
+    color: white;
 }
 
 .card-Ranger {
@@ -20,44 +23,92 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
 }
 
 .imgRanger {
-    width: 700px;
-    height: 50vh;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     border-radius: 20px 20px 0 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
 }
 
 .card-Ranger-texto {
     background-color: #132856;
-    width: 680px;
-    height: 150px;
-    padding-left: 20px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
     border-radius: 0 0 20px 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255,255,255,.3);
 }
 
 label {
     color: white;
     font-weight: bold;
+    font-size: 24px;
 }
 
 p {
     color: white;
+    line-height: 1.5;
 }
 
 .btn {
     all: unset;
-    width: 90px;
-    height: 30px;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
     text-align: center;
     background-color: #1C53CD;
     color: white;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .card-Ranger {
+        padding-top: 40px;
+    }
+
+    .card-Ranger-texto {
+        text-align: center;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .imgRanger {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card-Ranger-texto {
+        border-radius: 0 0 12px 12px;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
 }
