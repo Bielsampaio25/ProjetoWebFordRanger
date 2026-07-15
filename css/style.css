@@ -1,5 +1,4 @@
 body{
-    background-color: red;
     margin: 0;
 }
 
@@ -52,7 +51,7 @@ main {
     gap: 15px;
 }
 
-.footer-redes p {
+.footer p {
     color: #132856;
     margin: 0;
     font-size: 18px;
